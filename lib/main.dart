@@ -1,3 +1,4 @@
+import 'package:connecta_app/Screens/main_screen/main_unified_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -23,10 +24,6 @@ class MyHomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Center(
-        child: Text("data"),
-      ),
-    );
+    return MainUnifiedScreen();
   }
 }
