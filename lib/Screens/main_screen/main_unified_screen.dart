@@ -3,11 +3,16 @@ import 'package:connecta_app/Screens/main_screen/msg_tab_bar.dart';
 import 'package:connecta_app/constants/all_colors/GlobalColors.dart';
 import 'package:flutter/material.dart';
 
+import '../../constants/textfeild/TextFeild.dart';
+
 class MainUnifiedScreen extends StatelessWidget {
+
   const MainUnifiedScreen({super.key});
 
   @override
+
   Widget build(BuildContext context) {
+
     return SafeArea(
         child: Scaffold(
       appBar: AppBar(
@@ -34,6 +39,7 @@ class MainUnifiedScreen extends StatelessWidget {
           child: Expanded(
             child: Column(
               children: [
+                SearchTextfeild(),
                 Container(
                   height: 100,
 
@@ -67,9 +73,10 @@ class MainUnifiedScreen extends StatelessWidget {
                   ),
                 ),
 
-                SizedBox(height: 20,),
+                const SizedBox(height: 20,),
                 Expanded(
-                    child: ConnectaTabBar())
+                    child: ConnectaTabBar()),
+
 
               ],
             ),
